@@ -11,30 +11,29 @@ Create `combined.cpp` with both features. Do not use Git or an automatic compari
 
 | File | Feature present | Important changed lines |
 |---|---|---|
-| `student_file_a.cpp` |  |  |
-| `student_file_b.cpp` |  |  |
+| `student_file_a.cpp` | input validation and average | line 11 |
+| `student_file_b.cpp` | finding the highest |line 13 |
 
 | Input | Actual output | Pass/fail |
 |---|---|---|
-| `70 80 90` |  |  |
-| `-1 80 90` |  |  |
-| `70 101 90` |  |  |
+| `70 80 90` | Average: 80.0 Highest: 90.0  | pass |
+| `-1 80 90` | Invalid score | fail |
+| `70 101 90` | Invalid score | fail |
 
 ## From experience to requirements
 
 **Observation — what actually happened while you worked:**
 
-________________________________________________________________________
+>> I combine both of the files by extracting new feature from the file b. And i include the #include <algorithm> and the part where highest is.
 
 **Problem — why that event could cause harm:**
 
-________________________________________________________________________
+>> Can get some conflict or merging issues if we marge one to another.
 
-**UN:** A developer needs a way to ______________________________________
+**UN:** A developer needs a way to combine file as per the project requirements
+because unwanted code may harm the project.
 
-because ________________________________________________________________.
-
-**UR:** A developer shall be able to ___________________________________.
+**UR:** A developer shall be able to know where is the changes happen and what's the logic behind this.
 
 ## Example
 
